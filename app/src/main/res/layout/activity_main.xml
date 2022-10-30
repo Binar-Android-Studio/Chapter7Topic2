@@ -12,25 +12,19 @@
         android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="number 1"/>
+        android:hint="nusername"/>
     <EditText
         android:layout_marginVertical="5dp"
         android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="number 2"/>
-    <EditText
-        android:layout_marginVertical="5dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="number 3"/>
+        android:hint="passwrd"/>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Login"
         android:layout_marginVertical="5dp"
         android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="crash"/>
+        android:text="Login"/>
 
 </LinearLayout>
