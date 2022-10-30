@@ -1,5 +1,7 @@
 package com.example.chapter7topic2
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.chapter7topic2.databinding.ActivityMainBinding
@@ -10,9 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        throw RuntimeException("Test Crash")
 
         binding.button.setOnClickListener(){
-            throw RuntimeException("Test Crash")
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/danialfarrosmaulana/"))
+            startActivity(browserIntent)
         }
 
     }
